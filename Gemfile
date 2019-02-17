@@ -24,6 +24,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Provides Sprockets implementation for Rails 4.x (and beyond) Asset Pipeline.
 gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
+# Bootstrap JavaScript depends on jQuery. If you're using Rails 5.1+, add the jquery-rails gem to your Gemfile:
+gem 'jquery-rails'
 # Bootstrap 4 ruby gem for Ruby on Rails (Sprockets) and Hanami (formerly Lotus).
 gem 'bootstrap', '~> 4.3.1'
 # Use Redis adapter to run Action Cable in production
