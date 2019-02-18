@@ -14,8 +14,9 @@ class FilmesTest < ApplicationSystemTestCase
     visit filmes_url
     click_on "New Filme"
 
-    fill_in "Description", with: @filme.description
-    fill_in "Name", with: @filme.name
+    fill_in "Descricao", with: @filme.descricao
+    fill_in "Nome", with: @filme.nome
+    fill_in "Url capa", with: @filme.url_capa
     click_on "Create Filme"
 
     assert_text "Filme was successfully created"
@@ -26,8 +27,9 @@ class FilmesTest < ApplicationSystemTestCase
     visit filmes_url
     click_on "Edit", match: :first
 
-    fill_in "Description", with: @filme.description
-    fill_in "Name", with: @filme.name
+    fill_in "Descricao", with: @filme.descricao
+    fill_in "Nome", with: @filme.nome
+    fill_in "Url capa", with: @filme.url_capa
     click_on "Update Filme"
 
     assert_text "Filme was successfully updated"

@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  description: MyText
+  nome: MyString
+  descricao: MyText
+  url_capa: MyString
 
 two:
-  name: MyString
-  description: MyText
+  nome: MyString
+  descricao: MyText
+  url_capa: MyString

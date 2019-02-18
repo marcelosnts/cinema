@@ -16,9 +16,22 @@
  @import "bootstrap";
 
  body {
-    background-color: #666666af;
+    background-color: #ffffff;
     margin-left: auto;
     margin-right: auto;
-    width: 600px;
+    width: 1224px;
     font-family: verdana, arial, helvetica, sans-serif;
+ }
+
+ .img-capa {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+ }
+
+ .icone {
+    font-size: 24px;
+    position: absolute;
+    padding-top: 10px;
  }

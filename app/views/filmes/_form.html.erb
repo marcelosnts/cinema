@@ -10,24 +10,36 @@
       </ul>
     </div>
   <% end %>
+
   <br><br><br>
-  <div class="form-group row">
-    <%= form.label :name, class: "col-md-2 text-right" %>
-    <div class="col-md-10">
-      <%= form.text_field :name, class: "form-control" %>
+  <div class="form-horizontal">
+    <div class="form-group row">
+      <%= form.label :nome, class: "col-md-2 col-form-label text-right" %>
+      <div class="col-md-10">
+        <%= form.text_field :nome, class: "form-control" %>
+      </div>
     </div>
-  </div>
 
-  <div class="form-group row">
-    <%= form.label :description, class: "col-md-2 text-right" %>
-    <div class="col-md-10">
-      <%= form.text_area :description, class: "form-control" %>
+    <div class="form-group row">
+      <%= form.label :descricao, class: "col-md-2 col-form-label text-right" %>
+      <div class="col-md-10">
+        <%= form.text_area :descricao, class: "form-control" %>
+      </div>
     </div>
-  </div>
 
+    <div class="form-group row">
+      <%= form.label :url_capa, class: "col-md-2 col-form-label text-right" %>
+      <div class="col-md-10">
+        <%= form.text_field :url_capa, class: "form-control" %>
+      </div>
+    </div>
   
-
-  <div class="actions">
-    <%= form.submit %>
+    <div class="form-group row">
+      <div class="col-md-2"></div>
+      <div class="col-md-10">
+        <%= form.submit "Salvar", class: "col-md-2 btn btn-primary" %>
+        <%= link_to 'Voltar', filmes_path, class: "col-md-2 btn btn-danger" %>
+      </div>
+    </div>
   </div>
 <% end %>

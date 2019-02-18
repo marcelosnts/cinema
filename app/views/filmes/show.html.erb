@@ -1,13 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @filme.name %>
+  <strong>Nome:</strong>
+  <%= @filme.nome %>
 </p>
 
 <p>
-  <strong>Description:</strong>
-  <%= @filme.description %>
+  <strong>Descricao:</strong>
+  <%= @filme.descricao %>
+</p>
+
+<p>
+  <strong>Url capa:</strong>
+  <%= @filme.url_capa %>
 </p>
 
 <%= link_to 'Edit', edit_filme_path(@filme) %> |
