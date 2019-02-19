@@ -1,19 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Nome:</strong>
-  <%= @filme.nome %>
-</p>
+<div class="col-md-12 card">  
+  <div class="form-group row">
+    <div class="col-md-8">
+      <strong><%= @filme.nome %></strong>
+      
+      <br><br>
+      
+      <p>
+        <strong>Descrição:</strong>
+        <%= @filme.descricao %>
+      </p>
+    </div>
+    
+    <div class="col-md-4">
+      <%= image_tag @filme.url_capa, :alt => @filme.url_capa, class: "img-capa" %>    
+    </div>
+  </div>
+</div>
+<br>
+<%= link_to 'Editar', edit_filme_path(@filme), class: "btn btn-primary" %>
+<%= link_to 'Voltar', filmes_path, class: "btn btn-danger" %>
 
-<p>
-  <strong>Descricao:</strong>
-  <%= @filme.descricao %>
-</p>
-
-<p>
-  <strong>Url capa:</strong>
-  <%= @filme.url_capa %>
-</p>
-
-<%= link_to 'Edit', edit_filme_path(@filme) %> |
-<%= link_to 'Back', filmes_path %>

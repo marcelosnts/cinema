@@ -3,7 +3,7 @@
 <div class="form-group row">
     <h2 class="col-md-10">Filmes</h2>
     <%= link_to new_filme_path do %>
-      <span class="fas fa-plus icone"></span>
+      <span class="fas fa-plus icone pull-right"></span>
     <% end %>
 </div>
 
@@ -22,7 +22,7 @@
       <tr>
         <td><%= filme.nome %></td>
         <td><%= filme.descricao %></td>
-        <td><%= image_tag filme.url_capa, :alt => filme.url_capa, class: "img-capa" %></td>
+        <td><%= image_tag filme.url_capa, :alt => filme.url_capa, class: "thumb-capa" %></td>
         <td><%= link_to '', filme, class: "far fa-eye" %></td>
         <td><%= link_to '', edit_filme_path(filme), class: "far fa-edit" %></td>
         <td><%= link_to '', filme, method: :delete, data: { confirm: 'Are you sure?' }, class: "fas fa-trash" %></td>
