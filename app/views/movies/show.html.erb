@@ -4,23 +4,22 @@
   <div class="form-group row">
     <div class="col-md-8">
       <h2>
-        <strong><%= @filme.nome %></strong>
+        <strong><%= @movie.name %></strong>
       </h2>
       
       <br><br>
       
       <p>
         <strong>Descrição:</strong>
-        <%= @filme.descricao %>
+        <%= @movie.description %>
       </p>
     </div>
     
     <div class="col-md-4">
-      <%= image_tag @filme.url_capa, :alt => @filme.url_capa, class: "img-capa" %>    
+      <%= image_tag @movie.img_url, :alt => @movie.img_url, class: "cover" %>    
     </div>
   </div>
 </div>
 <br>
-<%= link_to 'Editar', edit_filme_path(@filme), class: "btn btn-primary" %>
-<%= link_to 'Voltar', filmes_path, class: "btn btn-danger" %>
-
+<%= link_to 'Editar', edit_movie_path(@movie), class: "btn btn-primary" %>
+<%= link_to 'Voltar', movies_path, class: "btn btn-danger" %>
