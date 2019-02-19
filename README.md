@@ -16,11 +16,11 @@
 <br>
 <strong><h3>Rotas:</h3></strong>
 <p>A rota <strong>/rails/info/routes</strong> exibe uma listagem de helpers e rotas da aplicação de acordo com a estrutura gerada através do comando <strong>rails g scaffold</strong>.</p>
-<p><strong>/filmes</strong> - Listagem de filmes cadastrados.</p>
-<p><strong>/filmes/new</strong> - Formulario para criação de um novo registro.</p>
-<p><strong>/filmes/id</strong> - Exibe o card maximizado do filme selecionado.</p>
-<p><strong>/filmes/id/edit</strong> - Exibe o formulário de edição do filme em questão.</p>
-<p><strong>/filmes/id</strong> - Quando utilizado junto ao verbo <strong>DELETE</strong> esta rota realiza a exclusão do filme.</p>
+<p><strong>/movies</strong> - Listagem de filmes cadastrados.</p>
+<p><strong>/movies/new</strong> - Formulario para criação de um novo registro.</p>
+<p><strong>/movies/id</strong> - Exibe o card maximizado do filme selecionado.</p>
+<p><strong>/movies/id/edit</strong> - Exibe o formulário de edição do filme em questão.</p>
+<p><strong>/movies/id</strong> - Quando utilizado junto ao verbo <strong>DELETE</strong> esta rota realiza a exclusão do filme.</p>
 
 <br>
 <strong><h3>Executando a aplicação:</h3></strong>
