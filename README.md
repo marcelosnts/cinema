@@ -37,3 +37,7 @@
 </pre>
 <p>Acessando o diretório do projeto via terminal deve-se rodar o comando <strong>rake db:create db:migrate</strong> para criar o banco de dados e as tabelas.</p>
 <p>Por ultimo é necessario subir o servidor de aplicação através do comando <strong>rails server</strong> e a interface estara disponivel através do endereço <strong>http://localhost:3000/</strong></p>
+
+<br>
+<strong><h3>Testes</h3></strong>
+<p>Existem quatro testes básicos configurados para a aplicação, cada um deles para verificar se os criterios de cadastros estão sendo atendidos através do preenchimento dos atributos do filme. O código pode ser encontrado no diretório <strong>spec/models/movie_spec.rb</strong> e para executar deve-se usar o comando <pre><code>rspec/models/movie_spec.rb</code></pre>.
