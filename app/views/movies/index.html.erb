@@ -10,17 +10,17 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th colspan="4">Nome</thtd>
-      <th>Descricao</th>
+      <th class="name-column">Nome</th>
+      <th>Descrição</th>
       <th>Thumbnail</th>
-      <th colspan="3"></th>
+      <th colspan="3">Ações</th>
     </tr>
   </thead>
 
   <tbody>
     <% @movies.each do |movie| %>
       <tr>
-        <td colspan="4"><%= movie.name %></td>
+        <td class="name-column"><%= movie.name %></td>
         <td><%= movie.description %></td>
         <td><%= image_tag movie.img_url, :alt => movie.img_url, class: "thumbnail" %></td>
         <td><%= link_to '', movie, class: "far fa-eye" %></td>

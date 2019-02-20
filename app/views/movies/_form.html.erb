@@ -1,7 +1,7 @@
 <%= form_with(model: movie, local: true) do |form| %>
   <% if movie.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(movie.errors.count, "error") %> impediu o filme de ser salvo:</h2>
+      <%= pluralize(movie.errors.count, "erros") %> impediram o filme de ser salvo:
 
       <ul>
       <% movie.errors.full_messages.each do |message| %>
@@ -41,5 +41,5 @@
         <%= link_to 'Voltar', movies_path, class: "col-md-2 btn btn-danger" %>
       </div>
     </div>
-</div>
+  </div>
 <% end %>
