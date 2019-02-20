@@ -40,4 +40,4 @@
 
 <br>
 <strong><h3>Testes</h3></strong>
-<p>Existem quatro testes básicos configurados para a aplicação, cada um deles para verificar se os criterios de cadastros estão sendo atendidos através do preenchimento dos atributos do filme. O código pode ser encontrado no diretório <strong>spec/models/movie_spec.rb</strong> e para executar deve-se usar o comando <pre><code>rspec/models/movie_spec.rb</code></pre>.
+<p>Existem quatro testes básicos configurados para a aplicação, cada um deles para verificar se os criterios de cadastros estão sendo atendidos através do preenchimento dos atributos do filme. O código pode ser encontrado no diretório <strong>spec/models/movie_spec.rb</strong> e para executar deve-se usar o comando <pre><code>rspec/models/movie_spec.rb</code></pre>
